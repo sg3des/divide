@@ -204,7 +204,7 @@ check = (znam,chis) ->
 	if parseInt(znam)==znam_val and parseInt(chis)==chis_val or parseInt(znam)/parseInt(chis)==znam_val/chis_val
 		clearInterval(intervalTime)
 		get('score').innerHTML=parseInt(get('score').innerHTML)+parseInt(get('point').innerHTML)
-		restart()
+		start()
 	return
 
 
