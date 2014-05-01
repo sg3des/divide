@@ -28,7 +28,7 @@ start=()->
 	point=11
 	scoretime()
 	
-	get('loose').className='loose'
+	
 	get("content").innerHTML=''
 	get("znamenatel").className='input'
 	get("znamenatel").value=''
@@ -39,7 +39,7 @@ start=()->
 
 	level+=1
 	get('level').innerHTML=level
-	zmin=5
+	zmin=4
 	zmax=10+level
 	cmin=2
 
@@ -62,7 +62,7 @@ start=()->
 		zval=[znam_val,znam_val,znam_val]
 		actionval=['+','+']
 		shuffle(cval)
-		intervalTime=setInterval(scoretime,750)
+		intervalTime=setInterval(scoretime,1000)
 	if 20<level<=30
 		znam_val=Math.floor(Math.random()*(zmax-zmin)) + zmin
 		chis_val=Math.floor(Math.random()*(zmax-cmin)) + cmin
@@ -74,7 +74,7 @@ start=()->
 		actionval=['+','+']
 		shuffle(cval)	
 		reducefun(cval,zval)
-		intervalTime=setInterval(scoretime,500)
+		intervalTime=setInterval(scoretime,1000)
 	if 30<level<=40
 		znam_val=Math.floor(Math.random()*(zmax-zmin)) + zmin
 		chis_val=Math.floor(Math.random()*(zmax-cmin)) + cmin
@@ -87,7 +87,7 @@ start=()->
 		actionval=['+','+']
 		shuffle(cval)	
 		reducefun(cval,zval)
-		intervalTime=setInterval(scoretime,400)
+		intervalTime=setInterval(scoretime,800)
 	if 40<level<=50
 		znam_val=Math.floor(Math.random()*(zmax-zmin)) + zmin
 		chis_val=Math.floor(Math.random()*(zmax-cmin)) + cmin
@@ -100,7 +100,7 @@ start=()->
 		actionval=['+','+','+']
 		shuffle(cval)	
 		reducefun(cval,zval)
-		intervalTime=setInterval(scoretime,300)
+		intervalTime=setInterval(scoretime,650)
 	if 50<level
 		znam_val=Math.floor(Math.random()*(zmax-zmin)) + zmin
 		chis_val=Math.floor(Math.random()*(zmax-cmin)) + cmin
@@ -113,7 +113,7 @@ start=()->
 		actionval=['+','+','+']
 		shuffle(cval)
 		reducefun(cval,zval)
-		intervalTime=setInterval(scoretime,200)
+		intervalTime=setInterval(scoretime,500)
 
 
 	console.log chis_val,znam_val
@@ -140,8 +140,8 @@ start=()->
 			content.appendChild(column)
 			column.appendChild(c1)
 			column.appendChild(z1)
-	
 	return;
+
 scoretime = () ->
 	get('point').innerHTML=point-=1
 	get('time').innerHTML=parseInt(get('time').innerHTML)+1
@@ -153,7 +153,8 @@ loose = () ->
 	clearInterval(intervalTime)
 	get('loose').className='loose1'
 	get('totalscore').innerHTML = get('time').innerHTML
-	get('time').innerHTML=0
+	restart()
+	
 	
 reducefun = (cval,zval) ->
 	for i in [0...cval.length]
@@ -163,7 +164,16 @@ reducefun = (cval,zval) ->
 			zval[i]=result[1]
 			return
 
-
+restart=()->
+	get('time').innerHTML=0
+	get('loose').className='loose'
+	znam_val=0;
+	chis_val=0;
+	cval=[];
+	zval=[];
+	level=0;
+	point=0;
+	score=0;
 
 shuffle=(array)->
     counter = array.length
@@ -193,7 +203,7 @@ check = (znam,chis) ->
 	if parseInt(znam)==znam_val and parseInt(chis)==chis_val or parseInt(znam)/parseInt(chis)==znam_val/chis_val
 		clearInterval(intervalTime)
 		get('score').innerHTML=parseInt(get('score').innerHTML)+parseInt(get('point').innerHTML)
-		start()
+		restart()
 	return
 
 
