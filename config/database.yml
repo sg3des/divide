@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: uchi
+  host: localhost
+  pool: 5
+  username: root
+  password: root
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: uchi
+  host: localhost
+  pool: 5
+  username: root
+  password: root
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: uchi
+  host: localhost
+  pool: 5
+  username: root
+  password: root

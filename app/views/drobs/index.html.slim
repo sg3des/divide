@@ -1,0 +1,29 @@
+h1 id='slogan' infinity divide!!!
+h2 id='level'
+
+
+span class='htext' 
+  | point:
+h3 id='point'
+span class='htext' 
+  | score:
+h3 id='score' 0
+span class='htext' 
+  | time:
+h3 id='time' 0
+
+div id='content'
+  
+div id='equally' 
+  | =
+div id='solution'
+  input id='chislitel' class='input' maxlength='2' oninput='check(znamenatel.value,chislitel.value)'
+  input id='znamenatel' class='input' maxlength='2' oninput='check(znamenatel.value,chislitel.value)'
+
+div id='loose' class='loose'
+  h1 YOU LOOSE!!!
+  div class='result_score' 
+    span total score:
+    span id='totalscore'
+  div class='button' onclick='start()'
+    | restart

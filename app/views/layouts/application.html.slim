@@ -1,0 +1,10 @@
+doctype html
+html
+head
+	title Uchi
+	= stylesheet_link_tag  "application", media: "all"
+	= javascript_include_tag "application", "reduce.js"
+	= csrf_meta_tags
+	link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Coming+Soon"
+body
+	= yield
