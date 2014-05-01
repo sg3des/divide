@@ -1,6 +1,3 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
 znam_val=0;
 chis_val=0;
 cval=[];
@@ -14,7 +11,7 @@ slogan = [
 	'ho ho ho, are you sure you`re ready?',
 	'ok, now welcome to the MATHELL!!!',
 	'Congratulations! you are on the first circle of MATHELL',
-	'the second circle!,tremble!',
+	'the second circle! tremble!',
 	'the third circle! so MATHELLISH!',
 	'the fourth circle! Uhh it has become too hot!',
 	'the fifth circle! Are you still so sure?',
@@ -87,6 +84,7 @@ start=()->
 		actionval=['+','+']
 		shuffle(cval)	
 		reducefun(cval,zval)
+		maskznam(cval,zval)
 		intervalTime=setInterval(scoretime,800)
 	if 40<level<=50
 		znam_val=Math.floor(Math.random()*(zmax-zmin)) + zmin
@@ -100,7 +98,8 @@ start=()->
 		actionval=['+','+','+']
 		shuffle(cval)	
 		reducefun(cval,zval)
-		intervalTime=setInterval(scoretime,650)
+		maskznam(cval,zval)
+		intervalTime=setInterval(scoretime,700)
 	if 50<level
 		znam_val=Math.floor(Math.random()*(zmax-zmin)) + zmin
 		chis_val=Math.floor(Math.random()*(zmax-cmin)) + cmin
@@ -113,7 +112,8 @@ start=()->
 		actionval=['+','+','+']
 		shuffle(cval)
 		reducefun(cval,zval)
-		intervalTime=setInterval(scoretime,500)
+		maskznam(cval,zval)
+		intervalTime=setInterval(scoretime,600)
 
 
 	console.log chis_val,znam_val
@@ -141,6 +141,13 @@ start=()->
 			column.appendChild(c1)
 			column.appendChild(z1)
 	return;
+maskznam = (cval,zval) ->
+	for i in [0...cval.length]
+		do (i)->
+			if zval[i]==znam_val
+				zval[i]=zval[i]*Math.floor(level/20)
+				cval[i]=cval[i]*Math.floor(level/20)
+				return
 
 scoretime = () ->
 	get('point').innerHTML=point-=1
@@ -166,6 +173,7 @@ reducefun = (cval,zval) ->
 
 restart=()->
 	get('time').innerHTML=0
+	get('score').innerHTML=0
 	get('loose').className='loose'
 	znam_val=0;
 	chis_val=0;
@@ -174,7 +182,8 @@ restart=()->
 	level=0;
 	point=0;
 	score=0;
-	start()
+
+	countdown()
 
 shuffle=(array)->
     counter = array.length
@@ -199,14 +208,45 @@ create = (className,inner) ->
 check = (znam,chis) ->
 	if parseInt(znam)==znam_val
 		get("znamenatel").className='inputCorrect'
+	else
+		get("znamenatel").className='input'
 	if parseInt(chis)==chis_val
 		get("chislitel").className='inputCorrect'
+	else
+		get("chislitel").className='input'
 	if parseInt(znam)==znam_val and parseInt(chis)==chis_val or parseInt(znam)/parseInt(chis)==znam_val/chis_val
 		clearInterval(intervalTime)
 		get('score').innerHTML=parseInt(get('score').innerHTML)+parseInt(get('point').innerHTML)
-		start()
+		setTimeout(start,500)
 	return
 
 
-window.onload = start
+numpad = (val) ->
+	console.log val,get("chislitel").className
+	if get("chislitel").className=='input'
+		get('chislitel').value=get('chislitel').value+parseInt(val)
+	else
+		get('znamenatel').value=get('znamenatel').value+parseInt(val)
+	check(get("znamenatel").value,get("chislitel").value)
+
+clearinput = (id) ->
+	get(id).value=''
+	check(get("znamenatel").value,get("chislitel").value)
+
+countdown = () ->
+	get('count').innerHTML=1
+	get('countdown').className='countdown'
+	count=()->
+		console.log get('count').innerHTML
+		get('count').innerHTML=parseInt(get('count').innerHTML)-1
+		if parseInt(get('count').innerHTML)<1
+			clearInterval(intervalCount)
+			get('countdown').className='countdown2'
+			start()
+			
+	intervalCount=setInterval(count,1000)
+	return
+
+
+window.onload = countdown
 get=(id)->document.getElementById(id)

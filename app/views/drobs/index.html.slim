@@ -11,15 +11,29 @@ h3 id='score' 0
 span class='htext' 
   | time:
 h3 id='time' 0
+div class='formula'
+  div id='content'
+    
+  div id='equally' 
+    | =
+  div id='solution'
+    input id='chislitel' class='input' oninput='check(znamenatel.value,chislitel.value)'
+    div class='delete' id='delc' onclick='clearinput("chislitel")'
+    input id='znamenatel' class='input' oninput='check(znamenatel.value,chislitel.value)'
+    div class='delete' id='delz' onclick='clearinput("znamenatel")'
 
-div id='content'
-  
-div id='equally' 
-  | =
-div id='solution'
-  input id='chislitel' class='input' maxlength='2' oninput='check(znamenatel.value,chislitel.value)'
-  input id='znamenatel' class='input' maxlength='2' oninput='check(znamenatel.value,chislitel.value)'
-
+  div class='numpadtop'
+      span onclick='numpad(this.innerHTML)' 1
+      span onclick='numpad(this.innerHTML)' 2
+      span onclick='numpad(this.innerHTML)' 3
+      span onclick='numpad(this.innerHTML)' 4
+      span onclick='numpad(this.innerHTML)' 5
+      span onclick='numpad(this.innerHTML)' 6
+      span onclick='numpad(this.innerHTML)' 7
+      span onclick='numpad(this.innerHTML)' 8
+      span onclick='numpad(this.innerHTML)' 9
+      span onclick='numpad(this.innerHTML)' 0
+  div class='numpadbot'
 div id='loose' class='loose'
   h1 YOU LOOSE!!!
   div class='result_score' 
@@ -27,3 +41,6 @@ div id='loose' class='loose'
     span id='totalscore'
   div class='button' onclick='restart()'
     | restart
+
+div id='countdown' class='countdown'
+  div id='count'  1
