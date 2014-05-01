@@ -2,6 +2,9 @@ znam_val=0;
 chis_val=0;
 cval=[];
 zval=[];
+znam_array=[];
+chis_array=[];
+
 level=0;
 point=0;
 score=0;
@@ -32,7 +35,8 @@ start=()->
 	get("chislitel").className='input'
 	get("chislitel").value=''
 
-	
+	chis_array=[]
+	znam_array=[]
 
 	level+=1
 	get('level').innerHTML=level
@@ -122,7 +126,7 @@ start=()->
 	
 	actiondiv=create('actiondiv','')
 	content.appendChild(actiondiv)
-
+	reduceresult(chis_val,znam_val)
 
 	for i in [0...actionval.length]
 		do (i)->
@@ -204,20 +208,49 @@ create = (className,inner) ->
 	div.innerHTML=inner
 	return div
 
-	
+reduceresult = (chis_val,znam_val) ->
+	console.log chis_val,znam_val
+	result = reduce(chis_val,znam_val)
+	for i in [1...10]
+		do (i)->
+			chis_array.push(result[0]*i)
+			znam_array.push(result[1]*i)
+	return
+
 check = (znam,chis) ->
-	if parseInt(znam)==znam_val
-		get("znamenatel").className='inputCorrect'
-	else
-		get("znamenatel").className='input'
-	if parseInt(chis)==chis_val
-		get("chislitel").className='inputCorrect'
-	else
-		get("chislitel").className='input'
+	
+	# console.log chis_array+"\n"+znam_array
+	get("chislitel").className='input'
+	get("chislitel").className='inputCorrect' for num in chis_array when parseInt(chis) is num
+	
+	get("znamenatel").className='input'
+	get("znamenatel").className='inputCorrect' for num in znam_array when parseInt(znam) is num
+	# get("znamenatel").className='inputCorrect'
+	# if parseInt(znam)==znam_val
+	# 	get("znamenatel").className='inputCorrect'
+	# else
+	# 	get("znamenatel").className='input'
+	# if parseInt(chis)==chis_val
+	# 	get("chislitel").className='inputCorrect'
+	# else
+	# 	get("chislitel").className='input'
 	if parseInt(znam)==znam_val and parseInt(chis)==chis_val or parseInt(znam)/parseInt(chis)==znam_val/chis_val
 		clearInterval(intervalTime)
 		get('score').innerHTML=parseInt(get('score').innerHTML)+parseInt(get('point').innerHTML)
 		setTimeout(start,500)
+		return
+	clearTimeout(checktimeout) 
+	
+	checkerror=()->
+		console.log 'asd'
+		get("chislitel").value=''
+		get("chislitel").className='inputIncorrect'
+		get("znamenatel").value=''
+		get("znamenatel").className='inputIncorrect'
+		return
+	if znam.length>0 and chis.length>0 
+		checktimeout=setTimeout(checkerror,1000)
+		console.log 'asd'
 	return
 
 
