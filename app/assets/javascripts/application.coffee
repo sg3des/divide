@@ -218,22 +218,12 @@ reduceresult = (chis_val,znam_val) ->
 	return
 
 check = (znam,chis) ->
-	
-	# console.log chis_array+"\n"+znam_array
 	get("chislitel").className='input'
 	get("chislitel").className='inputCorrect' for num in chis_array when parseInt(chis) is num
 	
 	get("znamenatel").className='input'
 	get("znamenatel").className='inputCorrect' for num in znam_array when parseInt(znam) is num
-	# get("znamenatel").className='inputCorrect'
-	# if parseInt(znam)==znam_val
-	# 	get("znamenatel").className='inputCorrect'
-	# else
-	# 	get("znamenatel").className='input'
-	# if parseInt(chis)==chis_val
-	# 	get("chislitel").className='inputCorrect'
-	# else
-	# 	get("chislitel").className='input'
+
 	clearTimeout(checktimeout) 
 	if parseInt(znam)==znam_val and parseInt(chis)==chis_val or parseInt(znam)/parseInt(chis)==znam_val/chis_val
 		clearInterval(intervalTime)
@@ -243,15 +233,12 @@ check = (znam,chis) ->
 	
 	
 	checkerror=()->
-		console.log 'asd'
 		get("chislitel").value=''
 		get("chislitel").className='inputIncorrect'
 		get("znamenatel").value=''
 		get("znamenatel").className='inputIncorrect'
 		return
-	if znam.length>0 and chis.length>0 
-		checktimeout=setTimeout(checkerror,1000)
-		console.log 'asd'
+	checktimeout=setTimeout(checkerror,1000) if znam.length>0 and chis.length>0 
 	return
 
 
@@ -268,7 +255,7 @@ clearinput = (id) ->
 	check(get("znamenatel").value,get("chislitel").value)
 
 countdown = () ->
-	get('count').innerHTML=1
+	get('count').innerHTML=3
 	get('countdown').className='countdown'
 	count=()->
 		console.log get('count').innerHTML

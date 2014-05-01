@@ -272,7 +272,6 @@ check = function(znam, chis) {
     return;
   }
   checkerror = function() {
-    console.log('asd');
     get("chislitel").value = '';
     get("chislitel").className = 'inputIncorrect';
     get("znamenatel").value = '';
@@ -280,7 +279,6 @@ check = function(znam, chis) {
   };
   if (znam.length > 0 && chis.length > 0) {
     checktimeout = setTimeout(checkerror, 1000);
-    console.log('asd');
   }
 };
 
@@ -301,7 +299,7 @@ clearinput = function(id) {
 
 countdown = function() {
   var count, intervalCount;
-  get('count').innerHTML = 1;
+  get('count').innerHTML = 3;
   get('countdown').className = 'countdown';
   count = function() {
     console.log(get('count').innerHTML);
