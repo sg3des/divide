@@ -10,18 +10,18 @@ point=0;
 score=0;
 intervalTime=setInterval('',1000)
 slogan = [
-	'go to the school',
+	'get ready, rookie!',
 	'ho ho ho, are you sure you`re ready?',
-	'ok, then go to the HELL!!!',
-	'Welcome you of first circle of the HELL',
-	'second circle! scary?',
-	'third circle! tremble human!',
-	'fourth circle! ...',
-	'fifth circle! Are you sure?',
-	'sixth circle! stop until it`s too late',
-	'seventh circle! late!!!!',
-	'Welcome to the hell of divide',
-	'hell of infinity dividy!!! HO HO HO!!!',
+	'ok, now welcome to the MATHELL!!!',
+	'Congratulations! you are on the first circle of MATHELL',
+	'the second circle!,tremble!',
+	'the third circle! so MATHELLISH!',
+	'the fourth circle! Uhh it has become too hot!',
+	'the fifth circle! Are you still so sure?',
+	'the sixth circle! stop until it`s too late',
+	'the seventh circle! make yourself mathellishly rageful for surviving',
+	'Guru of the divine perpetuity of MATHELL!',
+	'MATHELL is just a game made you godlike! HO HO HO!!!',
 ]
 
 start=()->
@@ -153,7 +153,7 @@ loose = () ->
 	clearInterval(intervalTime)
 	get('loose').className='loose1'
 	get('totalscore').innerHTML = get('time').innerHTML
-	restart()
+	
 	
 	
 reducefun = (cval,zval) ->
@@ -174,6 +174,7 @@ restart=()->
 	level=0;
 	point=0;
 	score=0;
+	start()
 
 shuffle=(array)->
     counter = array.length
