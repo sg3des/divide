@@ -264,13 +264,13 @@ check = function(znam, chis) {
       get("znamenatel").className = 'inputCorrect';
     }
   }
+  clearTimeout(checktimeout);
   if (parseInt(znam) === znam_val && parseInt(chis) === chis_val || parseInt(znam) / parseInt(chis) === znam_val / chis_val) {
     clearInterval(intervalTime);
     get('score').innerHTML = parseInt(get('score').innerHTML) + parseInt(get('point').innerHTML);
     setTimeout(start, 500);
     return;
   }
-  clearTimeout(checktimeout);
   checkerror = function() {
     console.log('asd');
     get("chislitel").value = '';

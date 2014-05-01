@@ -234,12 +234,13 @@ check = (znam,chis) ->
 	# 	get("chislitel").className='inputCorrect'
 	# else
 	# 	get("chislitel").className='input'
+	clearTimeout(checktimeout) 
 	if parseInt(znam)==znam_val and parseInt(chis)==chis_val or parseInt(znam)/parseInt(chis)==znam_val/chis_val
 		clearInterval(intervalTime)
 		get('score').innerHTML=parseInt(get('score').innerHTML)+parseInt(get('point').innerHTML)
 		setTimeout(start,500)
 		return
-	clearTimeout(checktimeout) 
+	
 	
 	checkerror=()->
 		console.log 'asd'
