@@ -1,23 +1,23 @@
 
 *{padding: 0px; margin:0px; position: relative; font-family: 'Coming Soon', cursive; font-weight: normal;}
 html, body{width: 100%; height: 100%; }
-body{background: url(back2.jpg); background-height: 100%; background-position: center;}
+body{background:asset-url('back2.jpg'); background-height: 100%; background-position: center;}
 h1{width: 100%; text-align: center; height: 100px; line-height: 100px; text-transform: uppercase; top: 50px;}
 h2{width: 100%; text-align: center; height: 100px; top:20px; font-size: 50px;}
 h3{width: 50%; left:50%; text-align: left; font-size: 26px; }
 
 .formula{position: relative; margin-top: 50px;}
 .numpadtop{position: absolute;left: 70%; width: 320px; margin: -120px 0px 0px -75px;}
-.numpadtop span{float: left; width: 50px; height: 50px; line-height: 50px; margin: 5px; text-align: center; cursor: pointer;  background-image: url(key.png);background-repeat: no-repeat;top:0px; transition:.2s; opacity: 1;}
+.numpadtop span{float: left; width: 50px; height: 50px; line-height: 50px; margin: 5px; text-align: center; cursor: pointer;  background-image: asset-url('key.png');background-repeat: no-repeat;top:0px; transition:.2s; opacity: 1;}
 .numpadtop span:hover{top:2px; opacity: .8;}
 
 #content{position: absolute; width: 50%; height: 400px; right: 40%; }
-.column{width: 150px; height: 300px; float: right; background-image: url(column.png); background-size: 100%;}
+.column{width: 150px; height: 300px; float: right; background-image: asset-url('column.png'); background-size: 100%;}
 
 #equally{position: absolute; width: 10%; left:60%; height: 300px; line-height:250px; font-size: 100px; text-align: center;}
-#solution{position: absolute; width: 150px; left:70%; height:300px;  background-image: url(column.png); background-size: 100%;}
+#solution{position: absolute; width: 150px; left:70%; height:300px;  background-image: asset-url('column.png'); background-size: 100%;}
 
-.delete{width: 100px; height: 100px; position: absolute; margin: 15px;cursor: pointer; background-image: url(eraser.png); background-size: 100%; background-repeat: no-repeat;}
+.delete{width: 100px; height: 100px; position: absolute; margin: 15px;cursor: pointer; background-image: asset-url('eraser.png'); background-size: 100%; background-repeat: no-repeat;}
 .delete:hover{opacity: 0.7}
 
 #delc{left:120px; top:5px;}
