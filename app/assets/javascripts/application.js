@@ -25,7 +25,7 @@ slogan = ['get ready, rookie!', 'ho ho ho, are you sure you`re ready?', 'ok, now
 
 start = function() {
   var actiondiv, actionval, cmin, content, first, fourth, i, second, third, zmax, zmin, _fn, _fn1, _i, _j, _ref, _ref1;
-  point = 2;
+  point = 10;
   scoretime();
   get("content").innerHTML = '';
   get("znamenatel").className = 'input';
@@ -299,7 +299,7 @@ clearinput = function(id) {
 
 countdown = function() {
   var count, intervalCount;
-  get('count').innerHTML = 1;
+  get('count').innerHTML = 3;
   get('countdown').className = 'countdown';
   count = function() {
     console.log(get('count').innerHTML);
