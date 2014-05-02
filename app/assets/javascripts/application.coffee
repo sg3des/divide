@@ -44,7 +44,9 @@ start=()->
 	zmin=4
 	zmax=10+level
 	cmin=2
+	clearInterval(intervalTime)
 	intervalTime=setInterval(scoretime,1000)
+
 	if level<=10
 		znam_val=Math.floor(Math.random()*(zmax-zmin)) + zmin
 		chis_val=Math.floor(Math.random()*(znam_val-cmin)) + cmin
@@ -153,7 +155,7 @@ maskznam = (cval,zval) ->
 scoretime = () ->
 	get('point').innerHTML=point-=1
 	get('time').innerHTML=parseInt(get('time').innerHTML)+1
-	if point<=0 && 0>=parseInt(get('score').innerHTML)+point
+	if 0>=parseInt(get('score').innerHTML)+point
 		loose()
 
 loose = () ->
@@ -179,6 +181,7 @@ restart=()->
 	get('score').innerHTML=0
 	get('loose').className='loose'
 	get('count').className='count'
+	get('yellowstick').className='yellowstick'
 	znam_val=0;
 	chis_val=0;
 	cval=[];
@@ -188,6 +191,24 @@ restart=()->
 	score=0;
 
 	countdown()
+
+countdown = () ->
+	get('count').innerHTML=10
+	get('countdown').className='countdown'
+	count=()->
+		# console.log get('count').innerHTML
+		get('count').innerHTML=parseInt(get('count').innerHTML)-1
+
+		if isNaN(get('count').innerHTML)
+			clearInterval(intervalCount)
+			get('countdown').className='hide'
+			start()
+		if parseInt(get('count').innerHTML)<1
+			get('yellowstick').className='hide'
+			get('count').innerHTML='START!!!'
+			get('count').className='countstart'
+	intervalCount=setInterval(count,1000)
+	return
 
 shuffle=(array)->
     counter = array.length
@@ -260,22 +281,7 @@ clearinput = (id) ->
 	get(id).value=''
 	check(get("znamenatel").value,get("chislitel").value)
 
-countdown = () ->
-	get('count').innerHTML=10
-	get('countdown').className='countdown'
-	count=()->
-		# console.log get('count').innerHTML
-		get('count').innerHTML=parseInt(get('count').innerHTML)-1
 
-		if isNaN(get('count').innerHTML)
-			clearInterval(intervalCount)
-			get('countdown').className='countdown2'
-			start()
-		if parseInt(get('count').innerHTML)<1
-			get('count').innerHTML='START!!!'
-			get('count').className='countstart'
-	intervalCount=setInterval(count,1000)
-	return
 
 
 window.onload = countdown

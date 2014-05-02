@@ -41,6 +41,7 @@ start = function() {
   zmin = 4;
   zmax = 10 + level;
   cmin = 2;
+  clearInterval(intervalTime);
   intervalTime = setInterval(scoretime, 1000);
   if (level <= 10) {
     znam_val = Math.floor(Math.random() * (zmax - zmin)) + zmin;
@@ -172,7 +173,7 @@ maskznam = function(cval, zval) {
 scoretime = function() {
   get('point').innerHTML = point -= 1;
   get('time').innerHTML = parseInt(get('time').innerHTML) + 1;
-  if (point <= 0 && 0 >= parseInt(get('score').innerHTML) + point) {
+  if (0 >= parseInt(get('score').innerHTML) + point) {
     return loose();
   }
 };
@@ -203,6 +204,7 @@ restart = function() {
   get('score').innerHTML = 0;
   get('loose').className = 'loose';
   get('count').className = 'count';
+  get('yellowstick').className = 'yellowstick';
   znam_val = 0;
   chis_val = 0;
   cval = [];
@@ -211,6 +213,26 @@ restart = function() {
   point = 0;
   score = 0;
   return countdown();
+};
+
+countdown = function() {
+  var count, intervalCount;
+  get('count').innerHTML = 10;
+  get('countdown').className = 'countdown';
+  count = function() {
+    get('count').innerHTML = parseInt(get('count').innerHTML) - 1;
+    if (isNaN(get('count').innerHTML)) {
+      clearInterval(intervalCount);
+      get('countdown').className = 'hide';
+      start();
+    }
+    if (parseInt(get('count').innerHTML) < 1) {
+      get('yellowstick').className = 'hide';
+      get('count').innerHTML = 'START!!!';
+      return get('count').className = 'countstart';
+    }
+  };
+  intervalCount = setInterval(count, 1000);
 };
 
 shuffle = function(array) {
@@ -308,25 +330,6 @@ numpad = function(val) {
 clearinput = function(id) {
   get(id).value = '';
   return check(get("znamenatel").value, get("chislitel").value);
-};
-
-countdown = function() {
-  var count, intervalCount;
-  get('count').innerHTML = 10;
-  get('countdown').className = 'countdown';
-  count = function() {
-    get('count').innerHTML = parseInt(get('count').innerHTML) - 1;
-    if (isNaN(get('count').innerHTML)) {
-      clearInterval(intervalCount);
-      get('countdown').className = 'countdown2';
-      start();
-    }
-    if (parseInt(get('count').innerHTML) < 1) {
-      get('count').innerHTML = 'START!!!';
-      return get('count').className = 'countstart';
-    }
-  };
-  intervalCount = setInterval(count, 1000);
 };
 
 window.onload = countdown;
