@@ -21,11 +21,12 @@ html, body{width: 100%; height: 100%; background-color: #7DC190; z-index: -2; fo
 #delz{left:120px; top:120px;}
 
 .input{width: 100px; height: 100px; font-size: 60px; line-height: 100px;  text-align: center; float: left; margin: 5px 25px; font-family: 'Coming Soon', cursive; }
-#chislitel,#znamenatel{background: rgba(255,255,255,0.3); border: 1px solid #aaa; }
+#chislitel,#znamenatel{background: rgba(255,255,255,0.3); border: 1px solid #aaa; font-family: 'Coming Soon', cursive;}
 .inputCorrect{width: 100px; height: 100px; font-size: 60px; line-height: 100px; border:1px solid green; outline: 4px solid green; text-align: center; float: left; margin: 5px 25px;}
 .inputCorrect:focus{border:1px solid green;  outline: 4px solid green; outline-offset: 0px;}
 .inputIncorrect{width: 100px; height: 100px; font-size: 60px; line-height: 100px; border:1px solid green; outline: 4px solid red; text-align: center; float: left; margin: 5px 25px;}
 .inputIncorrect:focus{border:1px solid green;  outline: 4px solid red; outline-offset: 0px;}
+
 
 .actiondiv{position: absolute; top:0px;  right:75px; font-family: 'Coming Soon', cursive; }
 .action{width: 150px; height: 300px; line-height: 230px; font-size: 70px; text-align: center; float: right; font-family: 'Coming Soon', cursive; }
@@ -35,9 +36,11 @@ html, body{width: 100%; height: 100%; background-color: #7DC190; z-index: -2; fo
 
 .loosetext{position: absolute; width: 250px; top:200px; left:50%; margin-left: -120px; text-align: center; font-family: 'Coming Soon', cursive; font-weight: bold; font-size: 30px; color: #943;}
 
-.result_score{position: absolute; width: 250px; top:260px; left:50%; margin-left: -120px; text-align: center; font-family: 'Coming Soon', cursive;  font-size: 24px; color: #943;}
+.result_score{position: absolute; width: 250px; top:260px; left:50%; margin-left: -200px; text-align: center; font-family: 'Coming Soon', cursive;  font-size: 24px; color: #943;}
+.result_level{position: absolute; width: 250px; top:260px; left:50%; margin-left: -50px; text-align: center; font-family: 'Coming Soon', cursive;  font-size: 24px; color: #943;}
 
 #totalscore{font-size: 28px; font-weight: bold;}
+#totallevel{font-size: 28px; font-weight: bold;}
 
 .htext{width: 49%; left:0px; text-align: right; position: absolute; font-size: 26px;}
 
@@ -47,8 +50,12 @@ html, body{width: 100%; height: 100%; background-color: #7DC190; z-index: -2; fo
 
 .countdown{position: absolute; width: 100%; height: 100%; background-color: rgba(255,255,255,0.5); top:0px; font-size: 100px; transition:1s; opacity: 1; text-align: center; z-index: 100;}
 .countdown2{display: none;}
-#count{top:300px; font-family: 'Coming Soon', cursive;  color:#394;}
-.yellowskick{position: absolute; width: 266px; left:50%; margin-left: -133px; top:250px;}
+.count{top:80px; font-family: 'Coming Soon', cursive;  color:#394; width: 266px; position: absolute; left:40%; text-align: center;}
+.countstart{top:400px; font-family: sans-serif; color:red; width: 100%; position: absolute; text-align: center; font-size: 100px; font-weight: bold; text-shadow:0px 2px 2px #933;}
+.yellowskick{position: absolute; width: 266px; left: 40%; top:50px;}
+.help{position: absolute; top:180px; left:70%; width: 1001px; margin-left: -650px;}
+
+
 .looseimg{position: absolute; width: 600px; left:50%; margin-left: -300px; top:100px;}
 
 #yourname{border: 0px; border-bottom: 2px solid #943; position: absolute; font-size: 24px; font-family: 'Coming Soon', cursive; background: none; top:400px; left:50%; margin-left: -150px; width: 200px;}

@@ -45,13 +45,17 @@ div id='loose' class='loose'
   img src=image_path('loose.png') class='looseimg'
   div class='loosetext' YOU LOOSE!!!
   div class='result_score' 
-    p your score:
+    p your score
     span id='totalscore'
+  div class='result_level' 
+    p last level
+    span id='totallevel'
   input id='yourname' placeholder='your name'
   img src=image_path('arrow_right.png') class='send'
   div class='button' onclick='restart()'
     | restart
 
 div id='countdown' class='countdown'
+  img src=image_path('help.png') class='help'
   img src=image_path('yellow-sticker.png') class='yellowskick'
-  div id='count'  3
+  div id='count' class='count' 3

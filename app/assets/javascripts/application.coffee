@@ -8,7 +8,8 @@ chis_array=[];
 level=0;
 point=0;
 score=0;
-intervalTime=setInterval('',1000)
+intervalTime=setInterval('',10000)
+checktimeout=setTimeout('',10000)
 slogan = [
 	'get ready, rookie!',
 	'ho ho ho, are you sure you`re ready?',
@@ -43,7 +44,7 @@ start=()->
 	zmin=4
 	zmax=10+level
 	cmin=2
-
+	intervalTime=setInterval(scoretime,1000)
 	if level<=10
 		znam_val=Math.floor(Math.random()*(zmax-zmin)) + zmin
 		chis_val=Math.floor(Math.random()*(znam_val-cmin)) + cmin
@@ -51,8 +52,8 @@ start=()->
 		second=chis_val-first
 		cval=[first,second]
 		zval=[znam_val,znam_val]
-		actionval=['+']
-		intervalTime=setInterval(scoretime,1000)
+		actionval=['+','']
+		
 	if 10<level<=20
 		znam_val=Math.floor(Math.random()*(zmax-zmin)) + zmin
 		chis_val=Math.floor(Math.random()*(znam_val-cmin)) + cmin
@@ -61,9 +62,8 @@ start=()->
 		third=chis_val-first-second
 		cval=[first,second,third]
 		zval=[znam_val,znam_val,znam_val]
-		actionval=['+','+']
+		actionval=['+','+','']
 		shuffle(cval)
-		intervalTime=setInterval(scoretime,1000)
 	if 20<level<=30
 		znam_val=Math.floor(Math.random()*(zmax-zmin)) + zmin
 		chis_val=Math.floor(Math.random()*(zmax-cmin)) + cmin
@@ -72,10 +72,9 @@ start=()->
 		third=chis_val-first-second
 		cval=[first,second,third]
 		zval=[znam_val,znam_val,znam_val]
-		actionval=['+','+']
+		actionval=['+','+','']
 		shuffle(cval)	
 		reducefun(cval,zval)
-		intervalTime=setInterval(scoretime,1000)
 	if 30<level<=40
 		znam_val=Math.floor(Math.random()*(zmax-zmin)) + zmin
 		chis_val=Math.floor(Math.random()*(zmax-cmin)) + cmin
@@ -85,11 +84,10 @@ start=()->
 
 		cval=[first,second,third]
 		zval=[znam_val,znam_val,znam_val]
-		actionval=['+','+']
+		actionval=['+','+','']
 		shuffle(cval)	
 		reducefun(cval,zval)
 		maskznam(cval,zval)
-		intervalTime=setInterval(scoretime,800)
 	if 40<level<=50
 		znam_val=Math.floor(Math.random()*(zmax-zmin)) + zmin
 		chis_val=Math.floor(Math.random()*(zmax-cmin)) + cmin
@@ -99,11 +97,10 @@ start=()->
 		fourth=chis_val-first-second-third
 		cval=[first,second,third,fourth]
 		zval=[znam_val,znam_val,znam_val,znam_val]
-		actionval=['+','+','+']
+		actionval=['+','+','+','']
 		shuffle(cval)	
 		reducefun(cval,zval)
 		maskznam(cval,zval)
-		intervalTime=setInterval(scoretime,700)
 	if 50<level
 		znam_val=Math.floor(Math.random()*(zmax-zmin)) + zmin
 		chis_val=Math.floor(Math.random()*(zmax-cmin)) + cmin
@@ -113,11 +110,10 @@ start=()->
 		fourth=chis_val-first-second-third
 		cval=[first,second,third,fourth]
 		zval=[znam_val,znam_val,znam_val,znam_val]
-		actionval=['+','+','+']
+		actionval=['+','+','+','']
 		shuffle(cval)
 		reducefun(cval,zval)
 		maskznam(cval,zval)
-		intervalTime=setInterval(scoretime,600)
 
 
 	console.log chis_val,znam_val
@@ -164,6 +160,8 @@ loose = () ->
 	clearInterval(intervalTime)
 	get('loose').className='loose1'
 	get('totalscore').innerHTML = get('time').innerHTML
+	get('totallevel').innerHTML = get('level').innerHTML
+	
 	
 	
 	
@@ -179,6 +177,7 @@ restart=()->
 	get('time').innerHTML=0
 	get('score').innerHTML=0
 	get('loose').className='loose'
+	get('count').className='count'
 	znam_val=0;
 	chis_val=0;
 	cval=[];
@@ -244,10 +243,12 @@ check = (znam,chis) ->
 
 numpad = (val) ->
 	console.log val,get("chislitel").className
-	if get("chislitel").className=='input'
+	if get("chislitel").className!='inputCorrect'
 		get('chislitel').value=get('chislitel').value+parseInt(val)
+		
 	else
 		get('znamenatel').value=get('znamenatel').value+parseInt(val)
+		
 	check(get("znamenatel").value,get("chislitel").value)
 
 clearinput = (id) ->
@@ -255,16 +256,19 @@ clearinput = (id) ->
 	check(get("znamenatel").value,get("chislitel").value)
 
 countdown = () ->
-	get('count').innerHTML=3
+	get('count').innerHTML=10
 	get('countdown').className='countdown'
 	count=()->
 		console.log get('count').innerHTML
 		get('count').innerHTML=parseInt(get('count').innerHTML)-1
-		if parseInt(get('count').innerHTML)<1
+
+		if isNaN(get('count').innerHTML)
 			clearInterval(intervalCount)
 			get('countdown').className='countdown2'
 			start()
-			
+		if parseInt(get('count').innerHTML)<1
+			get('count').innerHTML='START!!!'
+			get('count').className='countstart'
 	intervalCount=setInterval(count,1000)
 	return
 
