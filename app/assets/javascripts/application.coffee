@@ -114,6 +114,7 @@ start=()->
 		shuffle(cval)
 		reducefun(cval,zval)
 		maskznam(cval,zval)
+	return start() for num in cval when num==0
 
 
 	console.log chis_val,znam_val
@@ -152,11 +153,11 @@ maskznam = (cval,zval) ->
 scoretime = () ->
 	get('point').innerHTML=point-=1
 	get('time').innerHTML=parseInt(get('time').innerHTML)+1
-	if point<0 && 0>parseInt(get('score').innerHTML)+point
+	if point<=0 && 0>=parseInt(get('score').innerHTML)+point
 		loose()
 
 loose = () ->
-	console.log 'loose'
+	# console.log 'loose'
 	clearInterval(intervalTime)
 	get('loose').className='loose1'
 	get('totalscore').innerHTML = get('time').innerHTML
@@ -208,7 +209,7 @@ create = (className,inner) ->
 	return div
 
 reduceresult = (chis_val,znam_val) ->
-	console.log chis_val,znam_val
+	# console.log chis_val,znam_val
 	result = reduce(chis_val,znam_val)
 	for i in [1...10]
 		do (i)->
@@ -218,10 +219,12 @@ reduceresult = (chis_val,znam_val) ->
 
 check = (znam,chis) ->
 	get("chislitel").className='input'
-	get("chislitel").className='inputCorrect' for num in chis_array when parseInt(chis) is num
-	
+	get("chislitel").className='inputYCorrect' for num in chis_array when parseInt(chis) is num
+	get("chislitel").className='inputCorrect' if parseInt(chis)==chis_val
+
 	get("znamenatel").className='input'
-	get("znamenatel").className='inputCorrect' for num in znam_array when parseInt(znam) is num
+	get("znamenatel").className='inputYCorrect' for num in znam_array when parseInt(znam) is num
+	get("znamenatel").className='inputCorrect' if parseInt(znam)==znam_val
 
 	clearTimeout(checktimeout) 
 	if parseInt(znam)==znam_val and parseInt(chis)==chis_val or parseInt(znam)/parseInt(chis)==znam_val/chis_val
@@ -232,10 +235,12 @@ check = (znam,chis) ->
 	
 	
 	checkerror=()->
-		get("chislitel").value=''
-		get("chislitel").className='inputIncorrect'
-		get("znamenatel").value=''
-		get("znamenatel").className='inputIncorrect'
+		if get("chislitel").className != 'inputCorrect'
+			get("chislitel").value=''
+			get("chislitel").className='inputIncorrect'
+		if get("znamenatel").className != 'inputCorrect'
+			get("znamenatel").value=''
+			get("znamenatel").className='inputIncorrect'
 		return
 	checktimeout=setTimeout(checkerror,1000) if znam.length>0 and chis.length>0 
 	return
@@ -259,7 +264,7 @@ countdown = () ->
 	get('count').innerHTML=10
 	get('countdown').className='countdown'
 	count=()->
-		console.log get('count').innerHTML
+		# console.log get('count').innerHTML
 		get('count').innerHTML=parseInt(get('count').innerHTML)-1
 
 		if isNaN(get('count').innerHTML)

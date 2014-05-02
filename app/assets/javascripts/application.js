@@ -26,7 +26,7 @@ checktimeout = setTimeout('', 10000);
 slogan = ['get ready, rookie!', 'ho ho ho, are you sure you`re ready?', 'ok, now welcome to the MATHELL!!!', 'Congratulations! you are on the first circle of MATHELL', 'the second circle! tremble!', 'the third circle! so MATHELLISH!', 'the fourth circle! Uhh it has become too hot!', 'the fifth circle! Are you still so sure?', 'the sixth circle! stop until it`s too late', 'the seventh circle! make yourself mathellishly rageful for surviving', 'Guru of the divine perpetuity of MATHELL!', 'MATHELL is just a game made you godlike! HO HO HO!!!'];
 
 start = function() {
-  var actiondiv, actionval, cmin, content, first, fourth, i, second, third, zmax, zmin, _fn, _fn1, _i, _j, _ref, _ref1;
+  var actiondiv, actionval, cmin, content, first, fourth, i, num, second, third, zmax, zmin, _fn, _fn1, _i, _j, _k, _len, _ref, _ref1;
   point = 10;
   scoretime();
   get("content").innerHTML = '';
@@ -115,6 +115,12 @@ start = function() {
     reducefun(cval, zval);
     maskznam(cval, zval);
   }
+  for (_i = 0, _len = cval.length; _i < _len; _i++) {
+    num = cval[_i];
+    if (num === 0) {
+      return start();
+    }
+  }
   console.log(chis_val, znam_val);
   get('slogan').innerHTML = slogan[Math.floor(level / 10)];
   content = get("content");
@@ -129,7 +135,7 @@ start = function() {
     action = create('action', actionval[i]);
     return actiondiv.appendChild(action);
   };
-  for (i = _i = 0, _ref = actionval.length; 0 <= _ref ? _i < _ref : _i > _ref; i = 0 <= _ref ? ++_i : --_i) {
+  for (i = _j = 0, _ref = actionval.length; 0 <= _ref ? _j < _ref : _j > _ref; i = 0 <= _ref ? ++_j : --_j) {
     _fn(i);
   }
   _fn1 = function(i) {
@@ -144,7 +150,7 @@ start = function() {
     column.appendChild(c1);
     return column.appendChild(z1);
   };
-  for (i = _j = 0, _ref1 = cval.length; 0 <= _ref1 ? _j < _ref1 : _j > _ref1; i = 0 <= _ref1 ? ++_j : --_j) {
+  for (i = _k = 0, _ref1 = cval.length; 0 <= _ref1 ? _k < _ref1 : _k > _ref1; i = 0 <= _ref1 ? ++_k : --_k) {
     _fn1(i);
   }
 };
@@ -166,13 +172,12 @@ maskznam = function(cval, zval) {
 scoretime = function() {
   get('point').innerHTML = point -= 1;
   get('time').innerHTML = parseInt(get('time').innerHTML) + 1;
-  if (point < 0 && 0 > parseInt(get('score').innerHTML) + point) {
+  if (point <= 0 && 0 >= parseInt(get('score').innerHTML) + point) {
     return loose();
   }
 };
 
 loose = function() {
-  console.log('loose');
   clearInterval(intervalTime);
   get('loose').className = 'loose1';
   get('totalscore').innerHTML = get('time').innerHTML;
@@ -236,7 +241,6 @@ create = function(className, inner) {
 
 reduceresult = function(chis_val, znam_val) {
   var i, result, _fn, _i;
-  console.log(chis_val, znam_val);
   result = reduce(chis_val, znam_val);
   _fn = function(i) {
     chis_array.push(result[0] * i);
@@ -253,15 +257,21 @@ check = function(znam, chis) {
   for (_i = 0, _len = chis_array.length; _i < _len; _i++) {
     num = chis_array[_i];
     if (parseInt(chis) === num) {
-      get("chislitel").className = 'inputCorrect';
+      get("chislitel").className = 'inputYCorrect';
     }
+  }
+  if (parseInt(chis) === chis_val) {
+    get("chislitel").className = 'inputCorrect';
   }
   get("znamenatel").className = 'input';
   for (_j = 0, _len1 = znam_array.length; _j < _len1; _j++) {
     num = znam_array[_j];
     if (parseInt(znam) === num) {
-      get("znamenatel").className = 'inputCorrect';
+      get("znamenatel").className = 'inputYCorrect';
     }
+  }
+  if (parseInt(znam) === znam_val) {
+    get("znamenatel").className = 'inputCorrect';
   }
   clearTimeout(checktimeout);
   if (parseInt(znam) === znam_val && parseInt(chis) === chis_val || parseInt(znam) / parseInt(chis) === znam_val / chis_val) {
@@ -271,10 +281,14 @@ check = function(znam, chis) {
     return;
   }
   checkerror = function() {
-    get("chislitel").value = '';
-    get("chislitel").className = 'inputIncorrect';
-    get("znamenatel").value = '';
-    get("znamenatel").className = 'inputIncorrect';
+    if (get("chislitel").className !== 'inputCorrect') {
+      get("chislitel").value = '';
+      get("chislitel").className = 'inputIncorrect';
+    }
+    if (get("znamenatel").className !== 'inputCorrect') {
+      get("znamenatel").value = '';
+      get("znamenatel").className = 'inputIncorrect';
+    }
   };
   if (znam.length > 0 && chis.length > 0) {
     checktimeout = setTimeout(checkerror, 1000);
@@ -301,7 +315,6 @@ countdown = function() {
   get('count').innerHTML = 10;
   get('countdown').className = 'countdown';
   count = function() {
-    console.log(get('count').innerHTML);
     get('count').innerHTML = parseInt(get('count').innerHTML) - 1;
     if (isNaN(get('count').innerHTML)) {
       clearInterval(intervalCount);
