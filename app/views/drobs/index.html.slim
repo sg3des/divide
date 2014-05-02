@@ -1,16 +1,22 @@
-h1 id='slogan' infinity divide!!!
-h2 id='level'
+div class='header'
+  h1 class='title' MATHELL
+  h1 id='slogan'
 
+  div class='headerbox'
+    p class='boxtit' level
+    p id='level'
 
-span class='htext' 
-  | point:
-h3 id='point'
-span class='htext' 
-  | score:
-h3 id='score' 0
-span class='htext' 
-  | time:
-h3 id='time' 0
+  div class='headerbox'
+    p class='boxtit' point
+    p id='point'
+  div class='headerbox'
+    p class='boxtit' score
+    p id='score' 0
+  div class='headerbox'
+    p class='boxtit' time
+    p id='time' 0
+
+img src=image_path('notepad.png') class='notepad'
 div class='formula'
   div id='content'
     
@@ -23,6 +29,7 @@ div class='formula'
     div class='delete' id='delz' onclick='clearinput("znamenatel")'
 
   div class='numpadtop'
+      img src=image_path('keyboard.png') class='keyboard'
       span onclick='numpad(this.innerHTML)' 1
       span onclick='numpad(this.innerHTML)' 2
       span onclick='numpad(this.innerHTML)' 3
@@ -35,12 +42,16 @@ div class='formula'
       span onclick='numpad(this.innerHTML)' 0
   div class='numpadbot'
 div id='loose' class='loose'
-  h1 YOU LOOSE!!!
+  img src=image_path('loose.png') class='looseimg'
+  div class='loosetext' YOU LOOSE!!!
   div class='result_score' 
-    span total score:
+    p your score:
     span id='totalscore'
+  input id='yourname' placeholder='your name'
+  img src=image_path('arrow_right.png') class='send'
   div class='button' onclick='restart()'
     | restart
 
 div id='countdown' class='countdown'
+  img src=image_path('yellow-sticker.png') class='yellowskick'
   div id='count'  3

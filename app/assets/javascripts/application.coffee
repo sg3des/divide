@@ -25,7 +25,7 @@ slogan = [
 ]
 
 start=()->
-	point=11
+	point=2
 	scoretime()
 	
 	
@@ -255,7 +255,7 @@ clearinput = (id) ->
 	check(get("znamenatel").value,get("chislitel").value)
 
 countdown = () ->
-	get('count').innerHTML=3
+	get('count').innerHTML=1
 	get('countdown').className='countdown'
 	count=()->
 		console.log get('count').innerHTML
