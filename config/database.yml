@@ -1,29 +1,29 @@
 development:
-  adapter: postgresql
-  encoding: unicode
-  database: mathell
-  host: localhost
-  pool: 5
-  username: root
-  password: root
-  port: 5432
+
+	Host	ec2-54-243-42-236.compute-1.amazonaws.com
+	Database	db8hbf3ielifdd
+	User	ubkrnilgvyesza
+	Port	5432
+	Password	Ac9UDBYu9nZLMWDRHLs4SHqZJf
+	Psql	 heroku pg:psql --app frozen-shelf-9464 orange
+	URL	postgres://ubkrnilgvyesza:Ac9UDBYu9nZLMWDRHLs4SHqZJf@ec2-54-243-42-236.compute-1.amazonaws.com:5432/db8hbf3ielifdd
 
 test:
-  adapter: postgresql
-  encoding: unicode
-  database: mathell
-  host: localhost
-  pool: 5
-  username: root
-  password: root
-  port: 5432
+	Host	ec2-54-243-42-236.compute-1.amazonaws.com
+	Database	db8hbf3ielifdd
+	User	ubkrnilgvyesza
+	Port	5432
+	Password	Ac9UDBYu9nZLMWDRHLs4SHqZJf
+	Psql	 heroku pg:psql --app frozen-shelf-9464 orange
+	URL	postgres://ubkrnilgvyesza:Ac9UDBYu9nZLMWDRHLs4SHqZJf@ec2-54-243-42-236.compute-1.amazonaws.com:5432/db8hbf3ielifdd
+
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  database: mathell
-  host: localhost
-  pool: 5
-  username: root
-  password: root
-  port: 5432
+	Host	ec2-54-243-42-236.compute-1.amazonaws.com
+	Database	db8hbf3ielifdd
+	User	ubkrnilgvyesza
+	Port	5432
+	Password	Ac9UDBYu9nZLMWDRHLs4SHqZJf
+	Psql	 heroku pg:psql --app frozen-shelf-9464 orange
+	URL	postgres://ubkrnilgvyesza:Ac9UDBYu9nZLMWDRHLs4SHqZJf@ec2-54-243-42-236.compute-1.amazonaws.com:5432/db8hbf3ielifdd
+

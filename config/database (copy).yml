@@ -1,0 +1,29 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: mathell
+  host: localhost
+  pool: 5
+  username: root
+  password: root
+  port: 5432
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: mathell
+  host: localhost
+  pool: 5
+  username: root
+  password: root
+  port: 5432
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: mathell
+  host: localhost
+  pool: 5
+  username: root
+  password: root
+  port: 5432
