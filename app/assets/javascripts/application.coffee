@@ -24,9 +24,9 @@ slogan = [
 	'Guru of the divine perpetuity of MATHELL!',
 	'MATHELL is just a game made you godlike! HO HO HO!!!',
 ]
-startcount = 1
+startcount = 10
 start=()->
-	point=3
+	point=10
 	scoretime()
 	
 	

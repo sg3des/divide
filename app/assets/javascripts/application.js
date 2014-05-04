@@ -25,11 +25,11 @@ checktimeout = setTimeout('', 10000);
 
 slogan = ['get ready, rookie!', 'ho ho ho, are you sure you`re ready?', 'ok, now welcome to the MATHELL!!!', 'Congratulations! you are on the first circle of MATHELL', 'the second circle! tremble!', 'the third circle! so MATHELLISH!', 'the fourth circle! Uhh it has become too hot!', 'the fifth circle! Are you still so sure?', 'the sixth circle! stop until it`s too late', 'the seventh circle! make yourself mathellishly rageful for surviving', 'Guru of the divine perpetuity of MATHELL!', 'MATHELL is just a game made you godlike! HO HO HO!!!'];
 
-startcount = 1;
+startcount = 10;
 
 start = function() {
   var actiondiv, actionval, cmin, content, first, fourth, i, num, second, third, zmax, zmin, _fn, _fn1, _i, _j, _k, _len, _ref, _ref1;
-  point = 3;
+  point = 10;
   scoretime();
   get("content").innerHTML = '';
   get("znamenatel").className = 'input';
