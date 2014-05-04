@@ -1,28 +1,28 @@
 development:
- Host: ec2-54-243-42-236.compute-1.amazonaws.com
- Database: db8hbf3ielifdd
- User: ubkrnilgvyesza
- Port: 5432
- Password: Ac9UDBYu9nZLMWDRHLs4SHqZJf
- Psql: heroku pg:psql --app frozen-shelf-9464 orange
- URL: postgres://ubkrnilgvyesza:Ac9UDBYu9nZLMWDRHLs4SHqZJf@ec2-54-243-42-236.compute-1.amazonaws.com:5432/db8hbf3ielifdd
+  adapter: postgresql
+  encoding: unicode
+  database: db8hbf3ielifdd
+  host: ec2-54-243-42-236.compute-1.amazonaws.com
+  username: ubkrnilgvyesza
+  password: Ac9UDBYu9nZLMWDRHLs4SHqZJf
+  port: 5432
 
 test:
- Host: ec2-54-243-42-236.compute-1.amazonaws.com
- Database: db8hbf3ielifdd
- User: ubkrnilgvyesza
- Port: 5432
- Password: Ac9UDBYu9nZLMWDRHLs4SHqZJf
- Psql: heroku pg:psql --app frozen-shelf-9464 orange
- URL: postgres://ubkrnilgvyesza:Ac9UDBYu9nZLMWDRHLs4SHqZJf@ec2-54-243-42-236.compute-1.amazonaws.com:5432/db8hbf3ielifdd
+  adapter: postgresql
+  encoding: unicode
+  database: db8hbf3ielifdd
+  host: ec2-54-243-42-236.compute-1.amazonaws.com
+  username: ubkrnilgvyesza
+  password: Ac9UDBYu9nZLMWDRHLs4SHqZJf
+  port: 5432
 
 
 production:
- Host: ec2-54-243-42-236.compute-1.amazonaws.com
- Database: db8hbf3ielifdd
- User: ubkrnilgvyesza
- Port: 5432
- Password: Ac9UDBYu9nZLMWDRHLs4SHqZJf
- Psql: heroku pg:psql --app frozen-shelf-9464 orange
- URL: postgres://ubkrnilgvyesza:Ac9UDBYu9nZLMWDRHLs4SHqZJf@ec2-54-243-42-236.compute-1.amazonaws.com:5432/db8hbf3ielifdd
+  adapter: postgresql
+  encoding: unicode
+  database: db8hbf3ielifdd
+  host: ec2-54-243-42-236.compute-1.amazonaws.com
+  username: ubkrnilgvyesza
+  password: Ac9UDBYu9nZLMWDRHLs4SHqZJf
+  port: 5432
 
