@@ -1,10 +1,12 @@
 doctype html
 html
-head
-	title MATHELL
-	= stylesheet_link_tag  "application", media: "all"
-	= javascript_include_tag "application", "reduce.js"
-	= csrf_meta_tags
-	link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'
-body
-	= yield
+	head
+		title MATHELL
+		= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+		link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'
+	
+		= stylesheet_link_tag  "application", media: "all"
+		= javascript_include_tag "application", "reduce.js"
+		= csrf_meta_tags
+	body
+		= yield

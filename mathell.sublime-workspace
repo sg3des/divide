@@ -1,0 +1,1135 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"remote"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"s",
+				"sans-serif"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"f",
+				"font-family"
+			],
+			[
+				"fn",
+				"font-family"
+			],
+			[
+				"znam",
+				"znamenatel"
+			],
+			[
+				"zna",
+				"znam_array"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"co",
+				"countdown"
+			],
+			[
+				"cle",
+				"clearInterval"
+			],
+			[
+				"chi",
+				"chislitel"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"zn",
+				"znam_val"
+			],
+			[
+				"ac",
+				"actionval"
+			],
+			[
+				"action",
+				"actionval"
+			],
+			[
+				"reduce",
+				"reducefun"
+			],
+			[
+				"inn",
+				"innerHTML"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"chis",
+				"chis_val"
+			],
+			[
+				"z",
+				"znamenatel"
+			],
+			[
+				"ad",
+				"appendChild"
+			],
+			[
+				"fo",
+				"font-family"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"v",
+				"videoRestart"
+			],
+			[
+				"tim",
+				"timeupdate"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"m",
+				"myVideo"
+			],
+			[
+				"par",
+				"params"
+			],
+			[
+				"st",
+				"status"
+			],
+			[
+				"app",
+				"application"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"req",
+				"requstpath"
+			],
+			[
+				"i",
+				"inline-block"
+			],
+			[
+				"op",
+				"operators"
+			],
+			[
+				"tx",
+				"text-align"
+			],
+			[
+				"la",
+				"landing"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"Bac",
+				"background"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"fil",
+				"filter"
+			],
+			[
+				"on",
+				"onchange	Attr"
+			],
+			[
+				"b",
+				"bottom"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"t",
+				"table-caption"
+			],
+			[
+				"delete",
+				"delete_button"
+			],
+			[
+				"exp",
+				"explode"
+			],
+			[
+				"an",
+				"annonce"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"mysq",
+				"mysqli"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"result",
+				"result_id"
+			],
+			[
+				"c",
+				"console"
+			],
+			[
+				"cell",
+				"cell_item"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"ed",
+				"editor_table"
+			],
+			[
+				"border-s",
+				"border-spacing"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"sql",
+				"sql_get"
+			],
+			[
+				"preg",
+				"preg_match"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"tem",
+				"template"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"my",
+				"mysql_errno"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"wh",
+				"width"
+			],
+			[
+				"r",
+				"rgba()"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"tran",
+				"translateZ"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/views/drobs/index.html.slim",
+			"settings":
+			{
+				"buffer_size": 2848,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/application.html.slim",
+			"settings":
+			{
+				"buffer_size": 375,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/drobs/_user.html.slim",
+			"settings":
+			{
+				"buffer_size": 61,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1905,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/drobs_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1577,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/application.coffee",
+			"settings":
+			{
+				"buffer_size": 8193,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/reduce.js",
+			"settings":
+			{
+				"buffer_size": 244,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/drobs.css.scss",
+			"settings":
+			{
+				"buffer_size": 6300,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/application.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/ruby/www/yc/app/assets/javascripts/application.coffee",
+			"settings":
+			{
+				"buffer_size": 1682,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 306.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 114.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/ruby/www/uchi/app/views/drobs/create.html.slim",
+		"/home/ruby/www/uchi/app/views/drobs/create.js.erb",
+		"/home/ruby/www/uchi/app/views/drobs/_user.html.slim",
+		"/home/ruby/www/uchi/app/assets/javascripts/application.js",
+		"/home/ruby/www/yc/app/views/layouts/application.html.slim",
+		"/home/ruby/www/uchi/app/controllers/application_controller.rb",
+		"/home/ruby/www/yc/app/assets/javascripts/application.coffee",
+		"/home/ruby/%F",
+		"/tmp/fz3temp-1/_main.html.slim",
+		"/tmp/fz3temp-1/database.yml",
+		"/tmp/fz3temp-1/Gemfile",
+		"/tmp/fz3temp-1/config",
+		"/tmp/fz3temp-1/unicorn.stderr 2.log",
+		"/tmp/fz3temp-1/routes.rb",
+		"/tmp/fz3temp-1/deploy.rb",
+		"/tmp/fz3temp-1/environment.rb",
+		"/tmp/fz3temp-1/config.ru",
+		"/tmp/fz3temp-1/.gitignore",
+		"/tmp/fz3temp-1/footer 2.php",
+		"/tmp/fz3temp-1/footer.php",
+		"/home/mav/www/yc/Rakefile",
+		"/home/mav/www/yc/app/views/landing/_box.html.slim",
+		"/home/mav/www/yc/app/views/landing/_box",
+		"/home/mav/www/yc/app/views/landing/_back.html.slim",
+		"/home/mav/www/yc/app/views/landing/_header.html.slim",
+		"/home/mav/www/yc/app/views/landing/_background.html.slim",
+		"/tmp/fz3temp-1/admin_csv.php",
+		"/home/mav/www/yc/app/views/landing/_menu.html.slim",
+		"/home/mav/www/yc/app/assets/javascripts/asd",
+		"/home/mav/www/yc/app/assets/javascripts/landing.js",
+		"/home/mav/www/yc/app/assets/javascripts/landing.js.js",
+		"/home/mav/www/yc/app/assets/javascripts/landing.coffee",
+		"/home/mav/www/yc/app/assets/javascripts/landing.js.coffee",
+		"/home/mav/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/mav/www/yc/app/views/landing/about.html.slim",
+		"/home/mav/www/yc/app/views/landing/page.html.slim",
+		"/home/mav/www/yc/app/views/landing/operators.html.slim",
+		"/home/mav/www/yc/app/views/landing/medtour.html.slim",
+		"/home/mav/www/yc/app/views/landing/opertors.html.slim",
+		"/home/mav/www/yc/app/views/layouts/application.html.slim",
+		"/tmp/fz3temp-1/header.php",
+		"/home/mav/www/yc/app/controllers/application_controller.rb",
+		"/tmp/fz3temp-1/style.css",
+		"/tmp/fz3temp-1/soclink.php",
+		"/tmp/fz3temp-1/index.php",
+		"/home/mav/www/yc/app/views/landing/index.html2.erb",
+		"/home/mav/www/yc/config/database.yml",
+		"/tmp/fz3temp-1/template_styles.css",
+		"/home/mav/www/yc/app/views/layouts/application.html2.erb",
+		"/home/mav/www/yc/app/views/layouts/application.html.erb",
+		"/home/mav/www/yc/app/views/landing/index.html.slim",
+		"/home/mav/www/yc/app/views/landing/index.html.erb",
+		"/home/mav/www/yc/app/views/landing/index2.html.erb",
+		"/home/mav/www/yc/app/assets/images/example.html",
+		"/home/mav/www/yc/app/views/countrys/index.html.erb",
+		"/home/mav/www/yc/app/controllers/countrys_controller.rb",
+		"/tmp/fz3temp-1/editor.js",
+		"/tmp/fz3temp-1/editor.php",
+		"/tmp/fz3temp-1/editor_openedit.php",
+		"/tmp/fz3temp-1/engine.php",
+		"/home/mav/www/yc/app/assets/javascripts/application.js",
+		"/home/mav/www/yc/app/assets/stylesheets/landing.css.scss",
+		"/tmp/fz3temp-1/auth.js",
+		"/tmp/fz3temp-1/bottomMenu.php",
+		"/home/mav/%F",
+		"/home/mav/www/yc/config/routes.rb",
+		"/tmp/fz3temp-1/.profile",
+		"/tmp/fz3temp-1/index.html",
+		"/tmp/fz3temp-1/test.rb",
+		"/tmp/fz3temp-1/development.rb",
+		"/tmp/fz3temp-1/500.html",
+		"/tmp/fz3temp-1/production.rb",
+		"/tmp/fz3temp-1/boot.rb",
+		"/tmp/fz3temp-1/template 3.php",
+		"/tmp/fz3temp-1/template 2.php",
+		"/tmp/fz3temp-1/news.php",
+		"/tmp/fz3temp-1/template.php",
+		"/tmp/fz3temp-1/returncall.core.php",
+		"/tmp/fz3temp-1/.parameters.php",
+		"/tmp/fz3temp-1/returncall_window_forma.tpl",
+		"/tmp/fz3temp-1/page_forma_list.tpl",
+		"/tmp/fz3temp-1/index 3.php",
+		"/tmp/fz3temp-1/index 4.php",
+		"/tmp/fz3temp-1/index 2.php",
+		"/home/mav/www/oc/app/views/start/show.html.erb",
+		"/home/mav/www/oc/app/views/start/_menu.html.erb",
+		"/home/mav/www/oc/app/views/start/index.html.erb",
+		"/home/mav/www/oc/config/routes.rb",
+		"/home/mav/www/oc/app/controllers/start_controller.rb",
+		"/home/mav/www/oc/app/assets/stylesheets/start.css.scss",
+		"/tmp/fz3temp-1/.top.menu.php",
+		"/home/mav/www/oc/app/controllers/application_controller.rb",
+		"/home/mav/www/copy of rt/app/controllers/posts_controller.rb",
+		"/home/mav/www/rt/app/controllers/welcome_controller.rb",
+		"/home/mav/www/rt/app/controllers/posts_controller.rb",
+		"/home/mav/www/rt/config/routes.rb",
+		"/home/mav/www/rt/app/views/welcome/index.html.erb",
+		"/home/mav/www/copy of rt/app/views/posts/index.html.erb",
+		"/home/mav/www/copy of rt/app/views/posts/_form_menu.html.erb",
+		"/home/mav/www/copy of rt/app/views/posts/new.html.erb",
+		"/home/mav/www/copy of rt/app/views/posts/_menu.html.erb",
+		"/home/mav/www/rt/app/views/posts/edit.html.erb",
+		"/home/mav/www/rt/app/views/posts/new.html.erb",
+		"/home/mav/www/rt/app/views/posts/_form_menu.html.erb",
+		"/home/mav/www/rt/app/views/posts/show.html.erb",
+		"/home/mav/www/rt/app/views/posts/_form.html.erb",
+		"/tmp/fz3temp-1/login.processor.php",
+		"/tmp/fz3temp-1/config.inc.php",
+		"/home/mav/www/vrt/engine/editor/editor.js",
+		"/home/mav/www/vrt/engine/editor/editor.css",
+		"/home/mav/www/vrt/engine/editor/editor.php",
+		"/home/mav/www/vrt/engine/moduls/editor_openedit.php",
+		"/tmp/fz3temp-1/mysql.php",
+		"/home/mav/www/rt/app/views/greetings/hello.html.erb",
+		"/home/mav/www/vrt/engine/engine.php",
+		"/home/mav/www/vrt/engine/editor/index.php",
+		"/home/mav/www/vrt/engine/index.php",
+		"/home/mav/www/design/script.js",
+		"/home/mav/www/vrt/test.php",
+		"/home/mav/www/vrt/engine/auth.js",
+		"/home/mav/www/vrt/engine/moduls/editor_table.php",
+		"/home/mav/www/design/redactor/redactor.php",
+		"/home/mav/www/vrt/engine/copy of editor/index.php",
+		"/home/mav/www/vrt/.htaccess",
+		"/home/mav/www/design/engine.php",
+		"/home/mav/www/design/style.css",
+		"/home/mav/www/design/redactor/redactor.css",
+		"/home/mav/www/vrt/engine/editor/buttons/css/style3.css"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			", ",
+			"funaction",
+			"chislitel",
+			"div class='bg'",
+			"client",
+			"8px",
+			"asd",
+			"->",
+			"')",
+			"_tag",
+			".png'",
+			".jpg'",
+			"/assets/",
+			"rgba(240,210,60,1)",
+			"></",
+			"cursor",
+			"onclick=",
+			"999",
+			"config(",
+			"config(\n",
+			"\">\n",
+			"$html[\"name\"]",
+			"1",
+			"; ",
+			");\n",
+			"generate_header",
+			"14px",
+			"td3",
+			"ul",
+			"b_text",
+			"span",
+			"beg",
+			"b-current",
+			"b-curren",
+			"b-current\"",
+			"b-selector b-selector-page",
+			"font-f",
+			"gotoPage",
+			"\\page_button",
+			"next_page_button",
+			"next",
+			"td1",
+			"padding",
+			"padding:",
+			"padding: 10px",
+			"td1",
+			"600",
+			"padding",
+			"b-wrap",
+			"parseFloat"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"_path",
+			".png\" %>'",
+			".jpg\" %>'",
+			"<%= image_tag \"",
+			"%= image_tag \"",
+			"$yellow",
+			"config(\\\"field\\\",",
+			"$key"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/views/drobs/index.html.slim",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2848,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2553,
+								2553
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 766.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/layouts/application.html.slim",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 375,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								361,
+								361
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/drobs/_user.html.slim",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 61,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20,
+								20
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "config/routes.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1905,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								248,
+								248
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/controllers/drobs_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								174,
+								174
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "app/assets/javascripts/application.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8193,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5379,
+								5379
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2496.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/assets/javascripts/reduce.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 244,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								244,
+								244
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/assets/stylesheets/drobs.css.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6271,
+								6271
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1417.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "app/assets/javascripts/application.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/home/ruby/www/yc/app/assets/javascripts/application.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1682,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								370,
+								370
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 156.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.505519779209,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.582463465553,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.coffee_compile_output":
+	{
+		"height": 88.0
+	},
+	"output.coffeecompile_output":
+	{
+		"height": 110.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "mathell.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 130.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 5
+	}
+}

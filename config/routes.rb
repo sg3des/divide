@@ -1,5 +1,17 @@
 Uchi::Application.routes.draw do 
   root to: "drobs#index"
+  # post '/drobs', :to => 'drobs#create', :as => :ajax_create
+  #### get 'drobs/populate' => 'people#populate', as: :populate_people
+  get 'drobs/create' => 'drobs#create', as: :ajax_create
+  post 'drobs/create' => 'drobs#create', as: :ajax_create_post
+  # resources :drobs
+
+
+  # post "create", to: "drobs#index"
+  
+  
+  
+  # resources :drobs
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

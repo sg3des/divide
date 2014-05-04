@@ -5,11 +5,9 @@ one:
   level: 1
   score: 1
   ip: MyString
-  countplay: 1
 
 two:
   name: MyString
   level: 1
   score: 1
   ip: MyString
-  countplay: 1

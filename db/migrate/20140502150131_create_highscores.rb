@@ -5,7 +5,6 @@ class CreateHighscores < ActiveRecord::Migration
       t.integer :level
       t.integer :score
       t.string :ip
-      t.integer :countplay
 
       t.timestamps
     end

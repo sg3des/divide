@@ -24,9 +24,9 @@ slogan = [
 	'Guru of the divine perpetuity of MATHELL!',
 	'MATHELL is just a game made you godlike! HO HO HO!!!',
 ]
-
+startcount = 1
 start=()->
-	point=10
+	point=3
 	scoretime()
 	
 	
@@ -192,8 +192,45 @@ restart=()->
 
 	countdown()
 
+
+ajax = (sendarray,url,resid) ->
+
+	xmlhttp;
+	if window.XMLHttpRequest 
+		xmlhttp=new XMLHttpRequest();
+	else 
+		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+
+	xmlhttp.open("POST",url);
+	xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+	xmlhttp.send(sendarray);
+
+	xmlhttp.onreadystatechange=()->
+		if xmlhttp.readyState==4 && xmlhttp.status==200 
+			get(resid).innerHTML=xmlhttp.responseText;
+		return
+	return
+	  	
+
+sendresult = () ->
+	name=get('yourname').value
+	totallevel=get('totallevel').innerHTML
+	totalscore=get('totalscore').innerHTML
+	
+	sendarray='name='+name+'&level='+totallevel+'&score='+totalscore
+	url='drobs/create'
+	ajax(sendarray,url,'users')
+	remove('send')
+	return
+
+remove = (id) ->
+	return (idremove=get(id)).parentNode.removeChild(idremove);
+
+
+ 
+
 countdown = () ->
-	get('count').innerHTML=10
+	get('count').innerHTML=startcount
 	get('countdown').className='countdown'
 	count=()->
 		# console.log get('count').innerHTML
@@ -284,5 +321,7 @@ clearinput = (id) ->
 
 
 
+
 window.onload = countdown
 get=(id)->document.getElementById(id)
+

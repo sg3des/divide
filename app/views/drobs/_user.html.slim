@@ -1,0 +1,12 @@
+div class='highscore-title'
+	div class='highscore-name' name
+	div class='highscore-level'	level
+	div class='highscore-score' score
+- for user in @drobs
+	div class='highscore-line'
+		div class='highscore-name'
+			= user.name
+		div class='highscore-level'	 
+			= user.level
+		div class='highscore-score'
+			= user.score

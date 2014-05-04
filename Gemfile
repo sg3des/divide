@@ -1,24 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'slim-rails'
-gem 'pg'
-
-#gem 'sorcery'
-
-#gem 'devise'
-gem 'omniauth'
-
-#gem 'omniauthable'
-#gem 'registerable'
-#gem 'rememberable'
-#gem 'trackable'
-#gem 'timeoutable'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.1.0'
+gem 'slim-rails'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
+gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass-rails'
@@ -30,13 +18,13 @@ gem 'uglifier'
 gem 'coffee-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-gem 'therubyracer', platforms: :ruby
+# gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+#gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
@@ -50,12 +38,10 @@ end
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
-gem 'unicorn'
+#gem 'unicorn'
 
 # Use Capistrano for deployment
-gem 'capistrano'
-gem 'rvm-capistrano'
-gem 'capistrano-bundler'
+#gem 'capistrano'
 
 gem 'rails_12factor'
 
