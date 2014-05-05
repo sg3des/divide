@@ -4,12 +4,32 @@
 		"selected_items":
 		[
 			[
-				"re",
-				"remote"
-			],
-			[
 				"fon",
 				"font-size"
+			],
+			[
+				"te",
+				"text-indent"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"total",
+				"totallevel"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"re",
+				"remote"
 			],
 			[
 				"ba",
@@ -18,10 +38,6 @@
 			[
 				"s",
 				"sans-serif"
-			],
-			[
-				"bac",
-				"background"
 			],
 			[
 				"bo",
@@ -33,14 +49,6 @@
 			],
 			[
 				"tex",
-				"text-align"
-			],
-			[
-				"mar",
-				"margin-left"
-			],
-			[
-				"te",
 				"text-align"
 			],
 			[
@@ -198,10 +206,6 @@
 			[
 				"Bac",
 				"background"
-			],
-			[
-				"le",
-				"letter-spacing"
 			],
 			[
 				"fil",
@@ -371,7 +375,15 @@
 			"file": "app/views/drobs/index.html.slim",
 			"settings":
 			{
-				"buffer_size": 2848,
+				"buffer_size": 1934,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/drobs/create.html.slim",
+			"settings":
+			{
+				"buffer_size": 15,
 				"line_ending": "Unix"
 			}
 		},
@@ -379,7 +391,7 @@
 			"file": "app/views/layouts/application.html.slim",
 			"settings":
 			{
-				"buffer_size": 375,
+				"buffer_size": 385,
 				"line_ending": "Unix"
 			}
 		},
@@ -387,7 +399,7 @@
 			"file": "app/views/drobs/_user.html.slim",
 			"settings":
 			{
-				"buffer_size": 61,
+				"buffer_size": 317,
 				"line_ending": "Unix"
 			}
 		},
@@ -395,7 +407,7 @@
 			"file": "config/routes.rb",
 			"settings":
 			{
-				"buffer_size": 1905,
+				"buffer_size": 1970,
 				"line_ending": "Unix"
 			}
 		},
@@ -403,7 +415,7 @@
 			"file": "app/controllers/drobs_controller.rb",
 			"settings":
 			{
-				"buffer_size": 1577,
+				"buffer_size": 430,
 				"line_ending": "Unix"
 			}
 		},
@@ -411,7 +423,7 @@
 			"file": "app/assets/javascripts/application.coffee",
 			"settings":
 			{
-				"buffer_size": 8193,
+				"buffer_size": 8772,
 				"line_ending": "Unix"
 			}
 		},
@@ -427,15 +439,24 @@
 			"file": "app/assets/stylesheets/drobs.css.scss",
 			"settings":
 			{
-				"buffer_size": 6300,
+				"buffer_size": 7178,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/javascripts/ga.js",
+			"settings":
+			{
+				"buffer_size": 395,
+				"line_ending": "Unix",
+				"name": "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObjec"
 			}
 		},
 		{
 			"file": "app/assets/javascripts/application.js",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 11834,
 				"line_ending": "Unix"
 			}
 		},
@@ -488,8 +509,9 @@
 	},
 	"file_history":
 	[
-		"/home/ruby/www/uchi/app/views/drobs/create.html.slim",
+		"/home/ruby/www/uchi/app/views/drobs/showposition.html.slim",
 		"/home/ruby/www/uchi/app/views/drobs/create.js.erb",
+		"/home/ruby/www/uchi/app/views/drobs/create.html.slim",
 		"/home/ruby/www/uchi/app/views/drobs/_user.html.slim",
 		"/home/ruby/www/uchi/app/assets/javascripts/application.js",
 		"/home/ruby/www/yc/app/views/layouts/application.html.slim",
@@ -614,8 +636,7 @@
 		"/home/mav/www/vrt/.htaccess",
 		"/home/mav/www/design/engine.php",
 		"/home/mav/www/design/style.css",
-		"/home/mav/www/design/redactor/redactor.css",
-		"/home/mav/www/vrt/engine/editor/buttons/css/style3.css"
+		"/home/mav/www/design/redactor/redactor.css"
 	],
 	"find":
 	{
@@ -708,7 +729,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -717,15 +738,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2848,
+						"buffer_size": 1934,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2553,
-								2553
+								1608,
+								1608
 							]
 						],
 						"settings":
@@ -735,56 +756,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 766.0,
+						"translation.y": 403.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/views/layouts/application.html.slim",
+					"file": "app/views/drobs/create.html.slim",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 375,
+						"buffer_size": 15,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								361,
-								361
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/views/drobs/_user.html.slim",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 61,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								20,
-								20
+								15,
+								15
 							]
 						],
 						"settings":
@@ -795,30 +787,88 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 10,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 3,
-					"file": "config/routes.rb",
+					"buffer": 2,
+					"file": "app/views/layouts/application.html.slim",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1905,
+						"buffer_size": 385,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								248,
-								248
+								368,
+								368
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/drobs/_user.html.slim",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 317,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26,
+								26
+							]
+						],
+						"settings":
+						{
+							"spell_check": true,
+							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "config/routes.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1970,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								194,
+								194
 							]
 						],
 						"settings":
@@ -835,20 +885,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "app/controllers/drobs_controller.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1577,
+						"buffer_size": 430,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								174,
-								174
+								156,
+								156
 							]
 						],
 						"settings":
@@ -857,34 +907,34 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": -0.0,
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "app/assets/javascripts/application.coffee",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8193,
+						"buffer_size": 8772,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5379,
-								5379
+								767,
+								767
 							]
 						],
 						"settings":
@@ -893,14 +943,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2496.0,
+						"translation.y": 117.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "app/assets/javascripts/reduce.js",
 					"semi_transient": false,
 					"settings":
@@ -926,36 +976,65 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "app/assets/stylesheets/drobs.css.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6300,
+						"buffer_size": 7178,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6271,
-								6271
+								6340,
+								6340
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1417.0,
+						"translation.y": 1430.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "public/javascripts/ga.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 395,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								395,
+								395
+							]
+						],
+						"settings":
+						{
+							"auto_name": "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObjec",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -965,20 +1044,20 @@
 			"sheets":
 			[
 				{
-					"buffer": 8,
+					"buffer": 10,
 					"file": "app/assets/javascripts/application.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 11834,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								8395,
+								8395
 							]
 						],
 						"settings":
@@ -988,14 +1067,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3042.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 11,
 					"file": "/home/ruby/www/yc/app/assets/javascripts/application.coffee",
 					"semi_transient": false,
 					"settings":
@@ -1020,7 +1099,7 @@
 						"translation.y": 156.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 11,
 					"type": "text"
 				}
 			]
@@ -1072,7 +1151,7 @@
 		"rows":
 		[
 			0.0,
-			0.582463465553,
+			0.549060542797,
 			1.0
 		]
 	},

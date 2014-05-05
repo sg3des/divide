@@ -182,6 +182,12 @@ restart=()->
 	get('loose').className='loose'
 	get('count').className='count'
 	get('yellowstick').className='yellowstick'
+	sendimg=document.createElement("div");
+	sendimg.className='send'
+	sendimg.id='send'
+	sendimg.onclick='sendresult()'
+	get('loose').appendChild(sendimg)
+
 	znam_val=0;
 	chis_val=0;
 	cval=[];
